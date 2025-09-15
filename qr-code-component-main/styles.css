@@ -38,8 +38,13 @@
 }
 
 body,
+h2,
 p {
   margin: 0;
+}
+
+body {
+  min-height: 100vh;
 }
 
 img {
@@ -49,9 +54,7 @@ img {
 
 /* Layout styles */
 body {
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--color-slate-300);
