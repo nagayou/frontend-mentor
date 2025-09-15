@@ -17,6 +17,7 @@
 /* Typography utility classes */
 .text-outfit-regular {
   font-family: var(--font-family-outfit);
+  font-size: 15px;
   line-height: 140%;
   letter-spacing: 0.2px;
 }
@@ -53,47 +54,51 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: var(--spacing-500);
   background-color: var(--color-slate-300);
 }
 
-p {
-  font-size: 15px;
-}
-
-#qr-container {
+.qr-container {
+  position: relative;
   background-color: var(--color-white);
   width: 320px;
   border-radius: 20px;
   box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0477);
   padding: var(--spacing-200);
   padding-bottom: var(--spacing-500);
-  margin-bottom: var(--spacing-500);
 }
 
-#qr-image {
+.qr-image {
   border-radius: 10px;
   margin-bottom: var(--spacing-300);
 }
 
-#qr-text-container {
+.qr-text-container {
   padding: 0 var(--spacing-200);
 }
 
-#qr-title {
+.qr-title {
   text-align: center;
   color: var(--color-slate-900);
   margin-bottom: var(--spacing-200);
 }
 
-#qr-description {
+.qr-description {
   text-align: center;
   color: var(--color-slate-500);
 }
 
 .attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(95px);
+  width: 320px;
+  padding-bottom: var(--spacing-500);
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
