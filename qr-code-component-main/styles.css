@@ -54,7 +54,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: var(--spacing-500);
   background-color: var(--color-slate-300);
 }
 
@@ -92,9 +91,8 @@ body {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%) translateY(95px);
+  transform: translateX(-50%) translateY(55px);
   width: 320px;
-  padding-bottom: var(--spacing-500);
   font-size: 11px;
   text-align: center;
 }
